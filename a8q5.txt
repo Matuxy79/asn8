@@ -1,0 +1,10 @@
+#John Matukutire
+#11303324
+#CMPT 145 CRN 27177
+#L16
+
+C)
+For the base cases, when a or b is equal to 1, the function returns 1, which is correct because there is only one way to get to the top right corner (moving straight up or right). When both a and b are equal to 2, there are two paths, which is also correct because we can either move up twice or move right twice.
+
+D)
+For the recursive cases, we make the problem size smaller by calling MothraCount() on the adjacent tiles to the right and above. We then add the results of these recursive calls to get the total number of paths. The solution is built up using the answer from a smaller problem size because we know that the number of paths from the bottom left corner to a tile is equal to the sum of the number of paths from the adjacent tiles to the right and the tiles above it, as explained above.
